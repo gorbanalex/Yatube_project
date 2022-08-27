@@ -6,8 +6,8 @@ def index(request):
     return HttpResponse('Главная страница')
 
 
-def group_posts(request, groups):
-    return HttpResponse('Страница постов групп')
+def group_posts(request, slug):
+    return HttpResponse(f'Страница с группами {slug}')
 
 
 # Create your views here.
